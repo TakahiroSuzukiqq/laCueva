@@ -5,6 +5,6 @@ const indexController = require('../controllers/indexController');
 
 
 /* GET home page. */
-router.get('/', indexController.getIndexpage);
-
+//router.get('/', indexController.getIndexpage);
+router.get('/', indexController.myMiddleware, indexController.getIndexpage);
 module.exports = router;

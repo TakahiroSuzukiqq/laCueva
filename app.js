@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -7,6 +9,8 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+
+var mongoose = require('mongoose');
 
 var app = express();
 
@@ -31,6 +35,10 @@ app.use(function(req, res, next) {
   err.status = 404;
   next(err);
 });
+
+// database is called lacueva
+mongoose.connect(process.env.MONGODB_URI);
+const { connection: db } = mongoose;
 
 // error handler
 app.use(function(err, req, res, next) {
