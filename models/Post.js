@@ -8,11 +8,20 @@ const PostSchema = new Schema ({
 	unique_key: {
 		type: String
 	},
-	posting: {
-		unique_key: String,
-		foodName: String,
-		foodDescription: String,
-		price: Number,
+	// posting: {
+	// 	unique_key: String,
+	// 	foodName: String,
+	// 	foodDescription: String,
+	// 	price: Number,
+	// },
+	foodName: {
+		type: String
+	},
+	foodDescription: {
+		type: String
+	},
+	price: {
+		type: Number
 	},
 	created_at: {
 		type: Date,
@@ -20,7 +29,8 @@ const PostSchema = new Schema ({
 	}
 });
 
+//  +Photo image? +
+
 const Post = mongoose.model('Post', PostSchema);
 
 module.exports = Post;
- 

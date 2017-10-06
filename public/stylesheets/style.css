@@ -2,7 +2,18 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-
+/*
 a {
   color: #00B7FF;
+}*/
+
+.notificationTopics{
+  color: red;
+  margin-left: 80%;
+  margin-bottom: 10em; 
+}
+
+#thumbnail{
+  height: 200px;
+  width: 100%;
 }

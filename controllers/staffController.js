@@ -4,6 +4,6 @@ const Staff = require('../models/Staff');
 // Get Book
 exports.getStaff = (req, res) => {
     res.render('staff', {
-        title: 'Staff Time Table Page'
+        title: 'Staff Introduction Page'
 	})
 };
