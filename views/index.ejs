@@ -4,11 +4,30 @@
     <!--<title><%= title %></title>-->
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <% include partials/head.ejs %>
   </head>
   <body>
+
     <% include partials/header.ejs %>
+
     <h1><%= title %></h1>
     <h2><%= subtitle %></h2>
+    <br />
+
+    <div class="notificationTopics">
+      toach here
+      <p>new  Some notification/topics here</p>
+      <p>new  Some notification/topics 2 here</p>
+    </div>
+
+     <% include partials/thumbnail/upperMenuThumbnail.ejs %>
+     <% include partials/thumbnail/middleMenuThumbnail.ejs %>
+     <% include partials/thumbnail/bottomMenuThumbnail.ejs %>
+     
+    restaurant info here
+
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' />
   </body>
 </html>

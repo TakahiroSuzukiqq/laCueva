@@ -30,3 +30,11 @@ exports.getIndexpage = (req, res) => {     //this function will be called after 
 // 			})
 // 		})
 // };
+
+// Test
+exports.getTestId = (req, res, next) => {
+    res.render('index', {
+        output: req.params.id                          //pass the object = 'output' property to the view
+    }); 
+};
+

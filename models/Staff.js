@@ -8,17 +8,12 @@ const StaffSchema = new Schema ({
 	unique_key: {
 		type: String
 	},
-    staff: {
-		unique_key: String,
-		name: String,
-        shift: String,
-		hours: Number
-	},
     created_at: {
 		type: Date,
 		default: Date.now
 	}
 });
+    //  +Photo image? +
 
 const Staff = mongoose.model('Staff', StaffSchema);
 

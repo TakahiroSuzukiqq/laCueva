@@ -1,0 +1,50 @@
+<!--<form action="/post" method="post">
+    <br />
+    <br /> 
+        <input class="form-control" rows="1" cols="1" type="string" name="unique_key" placeholder="Enter the menu number with number and alphabets">
+    <br /> 
+        <textarea class="form-control" rows="1" type="string" name="foodName" placeholder="Enter the name"></textarea>
+        <textarea class="form-control" rows="3" type="string" name="foodDescription" placeholder="Enter the description"></textarea>
+    <textarea class="form-control" rows="1" type="number" name="price" placeholder="Enter the price"></textarea>
+    <br />
+    <p>Upload the menu photo</p>
+    <input type="submit">
+</form>
+    <br />
+    <br />-->
+
+<form method="POST" action="/post">
+
+  <div class="form-group">
+      <label for="EnterTheMenuIDWithNumbersAndAlphabets">Enter The Menu ID With Numbers And Alphabets</label>
+      <div class="row">
+          <div class="col-xs-1">
+              <input class="form-control" rows="1" type="string" name="unique_key" placeholder="Enter ID">
+         </div>
+      </div>
+  </div>
+
+  <div class="form-group">
+      <div class="row">
+          <div class="col-xs-3">
+              <label for="EnterTheFoodName">Enter The Food Name</label>
+              <input class="form-control" rows="1" type="string" name="foodName" placeholder="Food Name">
+         </div>
+     </div>
+  </div>
+  
+  <div class="form-group">
+    <label for="EnterTheFoodDescription">Enter The Food Description</label>
+    <textarea class="form-control" style="width:500px" rows="4" type="string" name="foodDescription" placeholder="Food Description"></textarea>
+  </div>
+
+  <div class="form-group">
+      <label for="EnterTheFoodPrice">Enter The Food Price</label>
+      <input class="form-control" style="width:100px" rows="1" type="number" name="price" placeholder="Price">
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+    
+<br />
+<br />

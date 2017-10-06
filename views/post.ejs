@@ -3,6 +3,7 @@
   <head>
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' /> 
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <% include partials/head.ejs %>
   </head>
   <body>
@@ -11,18 +12,8 @@
       <h2>You are on page <%= title%></h2>
       <h2>Post menu</h2>
 
-      <form action="/post" method="post">
-         <br />
-         <br />
-        <input type="text" class="form-control" name="qa_key_name" placeholder="Enter the menu number">
-         <br />
-        <textarea class="form-control" rows="3" type="text" name="questionnaire_name" placeholder="Enter the menu name"></textarea>
-         <br />
-         <p>Upload the menu photo</p>
-
-        <input type="submit">
-       </form>
-         <br />
-         <br />
+    <% include partials/postForm.ejs %>
+    <br />
+    <br />
   </body>
 </html>

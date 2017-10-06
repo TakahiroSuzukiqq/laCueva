@@ -6,30 +6,39 @@ const Post = require('../models/Post');
 // exports.getPost = (req, res) => {
 //     res.send('It works')
 // };
+
 // Get Post
 exports.getPost = (req, res) => {
     Post.find()
         .then((post) => {                      
 			res.render('post', {              //Render post view == template
                 title: 'La Cueva Menu Page',
-                subtitle: 'Enjoy Your Meal'
+                subtitle: 'Enjoy Your Meal',
+                post: post
 			})
 		})
 };
 
+// Post NewPost
+exports.getNewPost = (req, res) => {
+	console.log('TEST req.body is:', req.body);
+    const unique_key = req.body.unique_key;
+	const foodName = req.body.foodName;
+	const foodDescription = req.body.foodDescription;
+	const price = req.body.price;
+	let Post = new Post();
+    post.qa_key = unique_key ;
+	post.name = foodName;
+    post.foodDescription = foodDescription;
+	post.price = price;
+	post.save()
+		.then(() => {
+			res.redirect('/post')
+		})
+};
 
-// exports.getNewQuestionnaires = (req, res) => {
-// 	// console.log('TESTreq.body is:', req.body);
-// 	const name = req.body.questionnaire_name;
-// 	const question_type = req.body.question_type;
-// 	const dropdown_action = req.body.dropdown_action;
-// 	const qa_key = req.body.qa_key_name;
-// 	let questionnaire = new Questionnaire();
-// 	questionnaire.name = name;
-// 	questionnaire.question_type = dropdown_action;
-// 	questionnaire.qa_key = qa_key;
-// 	questionnaire.save()
-// 		.then(() => {
-// 			res.redirect('/questionnaire')
-// 		})
-// };
+// Test
+exports.getPostedId = (req, res, next) => {
+    res.render('post', {
+      }); 
+};
