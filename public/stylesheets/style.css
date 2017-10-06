@@ -17,3 +17,12 @@ a {
   height: 200px;
   width: 100%;
 }
+
+#botThumbnail{
+  height: 200px;
+  width: 80%;
+}
+#botImgThumbnail{
+   height: 200px;
+  width: 60%;
+}
