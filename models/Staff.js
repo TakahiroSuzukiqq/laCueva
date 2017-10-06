@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
-const PostSchema = new Schema ({
+const StaffSchema = new Schema ({
 	name: {
 		type: String,
 		trim: true
@@ -8,19 +8,19 @@ const PostSchema = new Schema ({
 	unique_key: {
 		type: String
 	},
-	posting: {
+    staff: {
 		unique_key: String,
-		foodName: String,
-		foodDescription: String,
-		price: Number,
+		name: String,
+        shift: String,
+		hours: Number
 	},
-	created_at: {
+    created_at: {
 		type: Date,
 		default: Date.now
 	}
 });
 
-const Post = mongoose.model('Post', PostSchema);
+const Staff = mongoose.model('Staff', StaffSchema);
 
-module.exports = Post;
+module.exports = Staff;
  
