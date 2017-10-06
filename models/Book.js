@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
-const PostSchema = new Schema ({
+const BookSchema = new Schema ({
 	name: {
 		type: String,
 		trim: true
@@ -8,19 +8,21 @@ const PostSchema = new Schema ({
 	unique_key: {
 		type: String
 	},
-	posting: {
+	booking: {
 		unique_key: String,
-		foodName: String,
-		foodDescription: String,
-		price: Number,
+		name: String,
+		book_date: Date,
+		book_number: Number,
+		preOrder: String,
+		created_at: Date,
 	},
 	created_at: {
 		type: Date,
 		default: Date.now
-	}
+	},
 });
 
-const Post = mongoose.model('Post', PostSchema);
+const Book = mongoose.model('Book', BookSchema);
 
-module.exports = Post;
+module.exports = Book;
  
