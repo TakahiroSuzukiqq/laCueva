@@ -13,6 +13,10 @@ a {
   margin-bottom: 10em; 
 }
 
+.upperMenuThumbnail{
+  margin-top: 4em;
+}
+
 #thumbnail{
   height: 200px;
   width: 100%;
@@ -25,4 +29,8 @@ a {
 #botImgThumbnail{
    height: 200px;
   width: 60%;
+}
+
+.middleMenuTHumbnail{
+  margin-bottom: 10em;
 }

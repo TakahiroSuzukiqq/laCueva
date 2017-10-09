@@ -19,16 +19,22 @@
       toach here
       <p>new  Some notification/topics here</p>
       <p>new  Some notification/topics 2 here</p>
-    </div>
+    </div> 
 
-     <% include partials/thumbnail/upperMenuThumbnail.ejs %>
-     <% include partials/thumbnail/middleMenuThumbnail.ejs %>
-     <br />
+    <% include partials/carousel.ejs %>
+
+      <% include partials/thumbnail/upperMenuThumbnail.ejs %>
+      <% include partials/thumbnail/middleMenuThumbnail.ejs %>
+
      <h1>Cheff's Recommendation of the month</h1>
      <% include partials/thumbnail/bottomMenuThumbnail.ejs %>
      
     restaurant info here
-
+  
+  
+    <!--$('.carousel').carousel({
+  interval: 2000
+})-->
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' />
   </body>
