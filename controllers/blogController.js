@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Book = require('../models/Blog');
+const Blog = require('../models/Blog');
 
 // Get Book
 exports.getBlog = (req, res) => {

@@ -36,11 +36,11 @@ router.get('/staff', staffController.getStaff);
 
 
 /* TIME TABLE */
-router.get('timetable', timeTableController.getTimeTable);
+router.get('/timetable', timeTableController.getTimeTable);
 
 
 /* BLOGS */ 
-router.get('blog', blogController.getBlog);
+router.get('/blog', blogController.getBlog);
 
 
 

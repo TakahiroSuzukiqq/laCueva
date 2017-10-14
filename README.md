@@ -8,8 +8,10 @@
 * [Note](#section5)     -->
   
 # <a name="section1"> App Image     
-<img src="https://preview.ibb.co/iO2Viw/Screen_Shot_2017_10_07_at_00_41_53.png" alt="Screen_Shot_2017_10_07_at_00_41_53" border="0">  
-    
+<img src="https://preview.ibb.co/iO2Viw/Screen_Shot_2017_10_07_at_00_41_53.png" alt="Screen_Shot_2017_10_07_at_00_41_53" border="0">   
+<img src="https://preview.ibb.co/hRYDtw/Screen_Shot_2017_10_15_at_00_13_06.png" alt="Screen_Shot_2017_10_15_at_00_13_06" border="0">   
+<img src="https://preview.ibb.co/jiwYtw/Screen_Shot_2017_10_15_at_00_13_16.png" alt="Screen_Shot_2017_10_15_at_00_13_16" border="0">   
+       
 <!-- # <a name="section2"> Basic Installation-->   
     
 # <a name="section3"> Docs     
