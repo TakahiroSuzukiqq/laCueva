@@ -14,6 +14,14 @@ var mongoose = require('mongoose');
 
 var app = express();
 
+// database is called lacueva
+mongoose.connect(process.env.MONGODB_URI);
+const { connection: db } = mongoose;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', () => {
+	console.log('connected to questionnaire database') //to confirm whether db is called or not
+});
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -36,10 +44,6 @@ app.use(function(req, res, next) {
   err.status = 404;
   next(err);
 });
-
-// database is called lacueva
-mongoose.connect(process.env.MONGODB_URI);
-const { connection: db } = mongoose;
 
 // error handler
 app.use(function(err, req, res, next) {
