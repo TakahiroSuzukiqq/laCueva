@@ -17,7 +17,8 @@ exports.getIndexpage = (req, res) => {     //this function will be called after 
     console.log(req.name);
     res.render('index', {                  //'index' is name for a file in views folder
         title: 'Welcome to La Cueva',
-        subtitle: 'The best spanish cuisine restaurant in Japan'
+        subtitle: 'The best spanish cuisine restaurant in Japan',
+        supersubtitle: 'Recommendation of the month'
     })
 };
 // // Get Post

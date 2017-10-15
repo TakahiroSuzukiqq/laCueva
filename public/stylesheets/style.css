@@ -1,5 +1,5 @@
 body {
-  padding: 50px;
+  /*padding: 50px;*/
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 /*
@@ -15,6 +15,8 @@ a {
 
 .upperMenuThumbnail{
   margin-top: 4em;
+  margin-right: 2em;
+  margin-left: 2em;
 }
 
 #thumbnail{
@@ -22,19 +24,39 @@ a {
   width: 100%;
 }
 
-#botThumbnail{
-  height: 200px;
-  width: 80%;
-}
 #botImgThumbnail{
-   height: 200px;
-  width: 60%;
+  height: 200px;
+  /*width: 50%;*/
 }
 
 .middleMenuTHumbnail{
   margin-bottom: 10em;
+  margin-right: 2em;
+  margin-left: 2em;
 }
+.bottomMenuTHumbnail{
+  /*height: 200px;
+  width: 70%;*/
+   margin-right: 2em;
+   margin-left: 2em;
+   margin-bottom: 20em;
+}
+/*#botThum
+  height: 200px;
+  width: 80%;
+}*/
 
-.blogButtonOne{
+/*.blogButtonOne{
   margin-top: 30em;
+}*/
+
+.panel-footer{
+  background-color: #8d9096;
+  height: 200px;
+}
+.footerCenter{
+  text-align: center;
+}
+.footerMarginTop{
+  margin-top: 7ex;
 }
