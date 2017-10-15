@@ -19,6 +19,8 @@
   [Bootstrap sizing](https://www.w3schools.com/bootstrap/bootstrap_forms_sizing.asp)    
   [jquery](http://code.jquery.com/)    
   [font awsome](http://fontawesome.io/get-started/)    
+  [Get Latitude and Longitude](https://www.latlong.net/)  
+  []()
      
 <!--# <a name="section4"> Issue & Solution   
    
