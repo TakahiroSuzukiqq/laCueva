@@ -26,7 +26,7 @@ exports.getNewPost = (req, res) => {
 	const foodName = req.body.foodName;
 	const foodDescription = req.body.foodDescription;
 	const price = req.body.price;
-	let Post = new Post();
+	let post = new Post();
     post.qa_key = unique_key ;
 	post.name = foodName;
     post.foodDescription = foodDescription;
