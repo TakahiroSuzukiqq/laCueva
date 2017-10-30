@@ -1,12 +1,9 @@
 # Overall   
 * [Description](#section1)    
 * [Functions & Future plans](#section2)     
-* [App Image](#section3)
-<!-- * [Basic Installation](#section4) -->       
+* [App Image](#section3)   
 * [Docs](#section5)
-<!--* * [Issue & Solution](#section6) 
-* [Note](#section7)     -->
-    
+      
 # <a name="section1"> Description  
   This is a project for as a website & management applicaion for a Spanish restaurant.  
   By using Nodejs for the restaurant and React side for customers.    
@@ -33,7 +30,7 @@
 <a href="https://ibb.co/dkRPY6"><img src="https://preview.ibb.co/i9WrD6/Screen_Shot_2017_10_30_at_22_15_23.png" alt="Screen_Shot_2017_10_30_at_22_15_23" border="0"></a>  
   
 * Booking page  
-<a href="https://ibb.co/djDGfm"><img src="https://preview.ibb.co/ik9p0m/Screen_Shot_2017_10_30_at_22_19_54.png" alt="Screen_Shot_2017_10_30_at_22_19_54" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>image hosting for website</a><br />  
+<a href="https://ibb.co/djDGfm"><img src="https://preview.ibb.co/ik9p0m/Screen_Shot_2017_10_30_at_22_19_54.png" alt="Screen_Shot_2017_10_30_at_22_19_54" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'></a><br />  
              
 <!-- # <a name="section4"> Basic Installation-->   
       
