@@ -1,5 +1,5 @@
 body {
-  /*padding: 50px;*/
+  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 /*
@@ -59,4 +59,13 @@ a {
 }
 .footerMarginTop{
   margin-top: 7ex;
+}
+
+.googleMap{
+  text-align: center;
+}
+
+#GoogleMap{
+  height: 300px;
+  width: 80%
 }

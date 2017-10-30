@@ -13,7 +13,7 @@ const blogController = require('../controllers/blogController');
 /* GET home page. */
 //router.get('/', indexController.getIndexpage);
 router.get('/', indexController.myMiddleware, indexController.getIndexpage);
-
+router.get('/googleMap', indexController.getGoogleMap);
 
 /*  POST  */ 
 /* POST NEW GET */

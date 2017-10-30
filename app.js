@@ -19,7 +19,7 @@ mongoose.connect(process.env.MONGODB_URI);
 const { connection: db } = mongoose;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', () => {
-	console.log('connected to questionnaire database') //to confirm whether db is called or not
+	console.log('connected to the lacueva database') //to confirm whether db is called or not
 });
 
 // view engine setup
