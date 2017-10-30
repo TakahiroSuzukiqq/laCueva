@@ -1,12 +1,12 @@
 # Overall   
 * [Description](#section1)    
-*[Functions & Future plans](#section2)     
-* [App Image](#section3)          
-<!-- * [Basic Installation](#section4) -->     
-* [Docs](#section5)       
-<!--* * [Issue & Solution](#section6)       
-* [Note](#section7)     -->    
-  
+* [Functions & Future plans](#section2)     
+* [App Image](#section3)
+<!-- * [Basic Installation](#section4) -->       
+* [Docs](#section5)
+<!--* * [Issue & Solution](#section6) 
+* [Note](#section7)     -->
+    
 # <a name="section1"> Description  
   This is a project for as a website & management applicaion for a Spanish restaurant.  
   By using Nodejs for the restaurant and React side for customers.    
