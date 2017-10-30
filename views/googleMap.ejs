@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' /> 
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <% include partials/head.ejs %>
+  </head>
+  <body>
+    <% include partials/header.ejs %>
+      <br>
+      <h2>You are on page <%= title%></h2>
+      <br />
+
+      <div class="googleMap">
+        <div id="GoogleMap"></div>
+        <script>
+            /*function initMap () {
+            var location = {lat: 35.701217, lng: 139.561559};
+            var map = new google.maps.Map(document.getElementById("GoogleMap"), {
+                zoom: 4,
+                center: location   //position center, once the map has been loaded
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+            }*/
+            function initMap () {
+            var options = {
+                zoom: 11,
+                center: {lat: 35.701217, lng: 139.561559}
+            }
+            var map = new google.maps.Map(document.getElementById("GoogleMap"), options)
+            
+            //array of markers to refactor below
+            /*var markers = [
+            {
+                coords: {lat: 35.701217, lng: 139.561559},
+                content: "<h2>La Cueva</h2>"
+            },
+            {
+                coords: {lat: 35.700374, lng: 139.662572},
+                iconImage: "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png",
+                content: "<h2>Si o No</h2>"
+            },
+            {
+                coords: {lat: 35.627878, lng: 139.722372},
+                iconImage: "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png",
+                content: "<h2>ばる・あらら</h2>"
+            }
+            ];*/
+            //Loop through markers
+            /*for (var i = 0; i < markers; i++ ) {
+                addMarkers(markers[i]);
+            }*/
+            
+            addMarker({
+                coords: {lat: 35.701217, lng: 139.561559},
+                content: "<h2>La Cueva</h2>"
+            });
+            addMarker({
+                coords: {lat: 35.700374, lng: 139.662572},
+                iconImage: "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png",
+                content: "<h2>Si o No</h2>"
+            });
+            addMarker({
+                coords: {lat: 35.666213, lng: 139.759538},
+                iconImage: "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png",
+                content: "<h2>La Copita</h2>"
+            });
+            
+
+            function addMarker(props) {                 //props = Inside Above addMarker
+                var marker = new google.maps.Marker({
+                //position: coords,
+                position: props.coords,
+                map: map,
+                //icon: "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png"
+                //icon: props.iconImage                 //In this case if addMarker doesn't have iconImage variable it is regarded as undifined so the marker changed into the normal one
+              });
+                if (props.iconImage){
+                    marker.setIcon(props.iconImage);    //to set iconImage for the addMarker if addMarker has iconImage when being used in admarker function
+                }
+                if(props.content){
+                    var infoWindow = new google.maps.InfoWindow({
+                        content: props.content
+                    });
+                    marker.addListener('click', function(){
+                        infoWindow.open(map, marker);
+                    });
+                }
+            }
+
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR API KEY&callback=initMap" async defer></script>
+      </div>
+  </body>
+</html>
